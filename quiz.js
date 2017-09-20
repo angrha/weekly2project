@@ -18,28 +18,32 @@ if (pertanyaan1 === 'batman') {
 if (pertanyaan2 === 'dragon ball') {
   score++;
   benar++;
-} else {
+}
+else {
    salah++;
 }
 
 if (pertanyaan3 === 'ragnarok') {
   score++;
   benar++;
-} else {
+}
+else {
     salah++;
 }
 
 if (pertanyaan4 === 'buto ijo') {
   score++;
   benar++;
-} else {
+}
+else {
    salah++;
 }
 
 if (pertanyaan5 === 'istri') {
   score++;
   benar++;
-} else {
+}
+else {
    salah++;
 }
 
@@ -47,21 +51,21 @@ if (pertanyaan5 === 'istri') {
 alert('Bosku mendapat ' + benar + ' jawaban yang benar dan '
       + salah + ' jawab salah. Bosku dapat skor ' + score + '.');
 
-function award(rank) {
-  var sRank = 'Bosku Pintar!';
-  var aRank = 'lumayan lah ya SNI!';
-  var bRank = 'yaudalah gpp';
-  var salahSemua = 'kurang terdydyk';
+function rank(nilai) {
+  var A = 'Bosku Pintar!';
+  var B = 'lumayan lah ya SNI!';
+  var C = 'hmm yaudalah gpp';
+  var D = 'kurang terdydyk';
 if( score === 5 ) {
-  rank = alert(sRank);
+  nilai = alert(A);
 } else if (score === 4 || score === 3) {
-    rank = alert(aRank);
+    nilai = alert(B);
 }
   else if (score === 2 || score === 1) {
-    rank = alert(bRank);
+    nilai = alert(C);
 }
   else {
-    rank = alert(salahSemua);
+    nilai = alert(D);
 }
 }
-award();
+rank();
